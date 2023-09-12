@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  background-color: rgba(60, 69, 92, 0.736);
+  background-image: url('src/assets/react.svg');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position:bottom;
+  background-blend-mode:hue;
+  background-position-y:15rem;
+}
+nav{
+  display: flex;
+  align-items: center;
+  background-color: rgba(60, 69, 92, 0.736);
+  font-family: sans-serif;
+  
+}
+nav>h2{
+  margin-right: auto;
+  color: #61dbfb;
+  margin-left: 5px;
+
+}
+main{
+  font-family: sans-serif;
+  padding: 40px 27px;
+}
+li::marker{
+  font-size: 1.5rem;
+  color: #61dbfb
+}
+nav>a{
+  margin-right: 10px;
+  color:beige;
+  text-decoration: none;
+}
+img{
+  margin-left: 1rem;
+}
+li{
+  padding-bottom:1rem;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+}
+.signature{
+  color: #61dbfb;
+  opacity: 0.1;
+  padding-top: 25rem;
+  padding-left: 85rem;
+}
