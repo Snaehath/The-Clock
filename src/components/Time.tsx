@@ -16,11 +16,14 @@ export default function Time(){
     return (
     <div className="main">
         <div/>
+        <div className="quote">
+            <p>'There are two types of Pain, One that hurt and One that changes you'</p>
+        </div>
         <div>
             <span>{hours.toString().padStart(2, '0')}:</span><span>{currTime.getMinutes().toString().padStart(2,'0')}</span><span className="sec">.{currTime.getSeconds().toString().padStart(2,'0')}</span><span className="session">{text}</span>
         </div>
         <div className="date">
-            <span>{currTime.toDateString()}</span>
+            <span className="Date">{currTime.toDateString()}</span>
         </div>
     </div>
    );
