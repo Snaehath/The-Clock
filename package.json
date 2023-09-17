@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Snaehath.github.io/The-Clock",
   "name": "react-docm",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "start": "vite",
     "build": "tsc && vite build",
@@ -11,6 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
