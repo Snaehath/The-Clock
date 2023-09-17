@@ -1,50 +1,40 @@
 body{
   margin: 0;
-  background-color: rgba(60, 69, 92, 0.736);
-  background-image: url('src/assets/react.svg');
-  background-repeat: no-repeat;
-  background-size: 25%;
-  background-position:bottom;
-  background-blend-mode:hue;
-  background-position-y:15rem;
+  background-color: rgb(24,24,23);
 }
-nav{
+
+div{
+  color: white;
   display: flex;
   align-items: center;
-  background-color: rgba(60, 69, 92, 0.736);
-  font-family: sans-serif;
-  
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 10rem;
+  font-family:Helvetica;
 }
-nav>h2{
-  margin-right: auto;
-  color: #61dbfb;
-  margin-left: 5px;
 
+.session, .date{
+  font-size:2.1rem;
+  margin-bottom: 7rem;
+  margin-left: 0.7rem;
 }
-main{
-  font-family: sans-serif;
-  padding: 40px 27px;
+
+.session{
+  margin-left: 0;
 }
-li::marker{
-  font-size: 1.5rem;
-  color: #61dbfb
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-nav>a{
-  margin-right: 10px;
-  color:beige;
-  text-decoration: none;
+
+.sec{
+  margin-top: 5.6rem;
+  font-size: xx-large;
 }
-img{
-  margin-left: 1rem;
-}
-li{
-  padding-bottom:1rem;
-  font-size: large;
-  font-family: 'Courier New', Courier, monospace;
-}
-.signature{
-  color: #61dbfb;
-  opacity: 0.1;
-  padding-top: 25rem;
-  padding-left: 85rem;
+.date{
+  margin-right: 2.1rem;
 }
