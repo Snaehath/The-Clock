@@ -17,7 +17,7 @@ export default function Time(){
     <div className="main">
         <div/>
         <div className="quote">
-            <p>'There are two types of pain. One that hurts you, one that changes you'</p>
+            <p>"Everyone is a Hunter until Lion Comes to play!"</p>
         </div>
         <div>
             <span>{hours.toString().padStart(2, '0')}:</span><span>{currTime.getMinutes().toString().padStart(2,'0')}</span><span className="sec">.{currTime.getSeconds().toString().padStart(2,'0')}</span><span className="session">{text}</span>
