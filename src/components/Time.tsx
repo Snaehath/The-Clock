@@ -4,25 +4,28 @@ export default function Time() {
   const [currTime, setCurrTime] = useState<Date>(new Date());
 
   useEffect(() => {
-    setInterval(() => {
+    const timer = setInterval(() => {
       setCurrTime(new Date());
     }, 1000);
-  }, [setCurrTime]);
+
+    return () => clearInterval(timer); // Clean up interval on unmount
+  }, []);
 
   let hours = currTime.getHours();
-  let text = hours > 11 ? "PM" : "AM";
-  hours = hours > 12 ? hours - 12 : hours;
+  const minutes = currTime.getMinutes();
+  const seconds = currTime.getSeconds();
+  const session = hours >= 12 ? "PM" : "AM";
+
+  hours = hours % 12 || 12; // Convert 0 to 12 for 12-hour format
 
   return (
     <div className="main">
       <div />
       <div>
         <span>{hours.toString().padStart(2, "0")}:</span>
-        <span>{currTime.getMinutes().toString().padStart(2, "0")}</span>
-        <span className="sec">
-          .{currTime.getSeconds().toString().padStart(2, "0")}
-        </span>
-        <span className="session">{text}</span>
+        <span>{minutes.toString().padStart(2, "0")}</span>
+        <span className="sec">.{seconds.toString().padStart(2, "0")}</span>
+        <span className="session">{session}</span>
       </div>
       <div className="date">
         <span className="Date">{currTime.toDateString()}</span>
