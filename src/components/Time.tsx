@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Quotes from "./quotes";
 
 export default function Time() {
   const [currTime, setCurrTime] = useState<Date>(new Date());
@@ -30,6 +31,7 @@ export default function Time() {
       <div className="date">
         <span className="Date">{currTime.toDateString()}</span>
       </div>
+      <Quotes />
     </div>
   );
 }
